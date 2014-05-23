@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title>List</title>
+</head>
+<body>
+	<h1>Post main page</h1>
+	<a href="/post">Create a post</a>
+	<ul>
+		<% posts.forEach(function (post, idx) { %>
+		<li>
+			<a href="/post/<%= post.id %>"><%= post.title %></a>
+		</li>
+		<% }); %>
+</body>
+</html>
