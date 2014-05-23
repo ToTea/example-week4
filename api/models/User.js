@@ -16,9 +16,12 @@ module.exports = {
   		type: 'string',
   		required: true
   	},
-    posts:{
+    posts: {
       collection: "Post",
       via: "owner"
+    },
+    profile: {
+      model: 'Profile'
     },
   	toDisplay: function() {
   		return "user name is " + this.name;
